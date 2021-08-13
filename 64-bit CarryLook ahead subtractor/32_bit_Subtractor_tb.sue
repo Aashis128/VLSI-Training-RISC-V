@@ -1,0 +1,4 @@
+proc SCHEMATIC_32_bit_Subtractor_tb {} {
+make 32_bit_Subtractor_final -name xi0 -origin {620 390}
+}
+

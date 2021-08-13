@@ -1,0 +1,382 @@
+proc SCHEMATIC_32bitSubtractor1 {} {
+make input -name Cin -origin {120 0}
+make input -name Vin_b -origin {120 20}
+make input -name Vin_a -origin {120 40}
+make input -name Vin_b1 -origin {120 60}
+make input -name Vin_a1 -origin {120 80}
+make input -name Vin_b2 -origin {120 100}
+make input -name Vin_b3 -origin {120 120}
+make input -name Vin_a3 -origin {120 140}
+make input -name Vin_a2 -origin {120 160}
+make input -name Vin_b4 -origin {120 180}
+make input -name Vin_a4 -origin {120 200}
+make input -name Vin_b5 -origin {120 220}
+make input -name Vin_a5 -origin {120 240}
+make input -name Vin_b6 -origin {120 260}
+make input -name Vin_b7 -origin {120 280}
+make input -name Vin_a7 -origin {120 300}
+make input -name Vin_a6 -origin {120 320}
+make input -name Vin_b8 -origin {120 340}
+make input -name Vin_a8 -origin {120 360}
+make input -name Vin_b9 -origin {120 380}
+make input -name Vin_a9 -origin {120 400}
+make input -name Vin_b10 -origin {120 420}
+make input -name Vin_b11 -origin {120 440}
+make input -name Vin_a11 -origin {120 460}
+make input -name Vin_a10 -origin {120 480}
+make input -name Vin_b12 -origin {120 500}
+make input -name Vin_a12 -origin {120 520}
+make input -name Vin_b13 -origin {120 540}
+make input -name Vin_a13 -origin {120 560}
+make input -name Vin_b14 -origin {120 580}
+make input -name Vin_b15 -origin {120 600}
+make input -name Vin_a15 -origin {120 620}
+make input -name Vin_a14 -origin {120 640}
+make 16bitSubtractor1 -name xi0 -origin {220 310}
+make 16bitSubtractor1 -name xi1 -origin {760 310}
+make output -name Sum_0 -origin {320 0}
+make output -name Carry_0 -origin {320 20}
+make output -name Sum_1 -origin {320 40}
+make output -name Carry_1 -origin {320 60}
+make output -name Sum_2 -origin {320 80}
+make output -name Sum_3 -origin {320 100}
+make output -name Carry_2 -origin {320 120}
+make output -name Sum_4 -origin {320 140}
+make output -name Carry_4 -origin {320 160}
+make output -name Sum_5 -origin {320 180}
+make output -name Carry_5 -origin {320 200}
+make output -name Sum_6 -origin {320 220}
+make output -name Carry_6 -origin {320 240}
+make output -name Sum_7 -origin {320 260}
+make output -name Sum_8 -origin {320 280}
+make output -name Carry_8 -origin {320 300}
+make output -name Sum_9 -origin {320 320}
+make output -name Carry_9 -origin {320 340}
+make output -name Sum_10 -origin {320 360}
+make output -name Carry_10 -origin {320 380}
+make output -name Sum_11 -origin {320 400}
+make output -name Sum_12 -origin {320 420}
+make output -name Carrry_12 -origin {320 440}
+make output -name Sum_13 -origin {320 460}
+make output -name Carry_13 -origin {320 480}
+make output -name Sum_14 -origin {320 500}
+make output -name Carry_14 -origin {320 520}
+make output -name Sum_15 -origin {320 540}
+make input -name Vin_b16 -origin {660 20}
+make input -name Vin_a16 -origin {660 40}
+make input -name Vin_b17 -origin {660 60}
+make input -name Vin_a17 -origin {660 80}
+make input -name Vin_b18 -origin {660 100}
+make input -name Vin_b19 -origin {660 120}
+make input -name Vin_a19 -origin {660 140}
+make input -name Vin_a18 -origin {660 160}
+make input -name Vin_b20 -origin {660 180}
+make input -name Vin_a20 -origin {660 200}
+make input -name Vin_b21 -origin {660 220}
+make input -name Vin_a21 -origin {660 240}
+make input -name Vin_b22 -origin {660 260}
+make input -name Vin_b23 -origin {660 280}
+make input -name Vin_a23 -origin {660 300}
+make input -name Vin_a22 -origin {660 320}
+make input -name Vin_b24 -origin {660 340}
+make input -name Vin_a24 -origin {660 360}
+make input -name Vin_b25 -origin {660 380}
+make input -name Vin_b26 -origin {660 420}
+make input -name Vin_a25 -origin {660 400}
+make input -name Vin_b27 -origin {660 440}
+make input -name Vin_a27 -origin {660 460}
+make input -name Vin_a26 -origin {660 480}
+make input -name Vin_b28 -origin {660 500}
+make input -name Vin_a28 -origin {660 520}
+make input -name Vin_b29 -origin {660 540}
+make input -name Vin_a29 -origin {660 560}
+make input -name Vin_b30 -origin {660 580}
+make input -name Vin_b31 -origin {660 600}
+make input -name Vin_a31 -origin {660 620}
+make input -name Vin_a30 -origin {660 640}
+make output -name Sum_16 -origin {860 0}
+make output -name Carry_16 -origin {860 20}
+make output -name Sum_17 -origin {860 40}
+make output -name Carry_17 -origin {860 60}
+make output -name Sum_18 -origin {860 80}
+make output -name Sum_19 -origin {860 100}
+make output -name Carry_18 -origin {860 120}
+make output -name Sum_20 -origin {860 140}
+make output -name Carry_20 -origin {860 160}
+make output -name Sum_21 -origin {860 180}
+make output -name Carry_21 -origin {860 200}
+make output -name Sum_22 -origin {860 220}
+make output -name Carry_22 -origin {860 240}
+make output -name Sum_23 -origin {860 260}
+make output -name Sum_24 -origin {860 280}
+make output -name Carry_24 -origin {860 300}
+make output -name Sum_25 -origin {860 320}
+make output -name Carry_25 -origin {860 340}
+make output -name Sum_26 -origin {860 360}
+make output -name Carry_26 -origin {860 380}
+make output -name Sum_27 -origin {860 400}
+make output -name Sum_28 -origin {860 420}
+make output -name Carry_28 -origin {860 440}
+make output -name Sum_29 -origin {860 460}
+make output -name Carry_29 -origin {860 480}
+make output -name Sum_30 -origin {860 500}
+make output -name Sum_31 -origin {860 540}
+make output -name Carry_30 -origin {860 520}
+make output -name Carry_31 -origin {860 560}
+  make_wire 320 560 450 560
+  make_wire 450 0 660 0
+  make_wire 450 0 450 560
+}
+
+proc ICON_32bitSubtractor1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -630} -name Cin
+icon_term -type input -origin {-100 -610} -name Vin_b
+icon_term -type input -origin {-100 -590} -name Vin_a
+icon_term -type input -origin {-100 -570} -name Vin_b1
+icon_term -type input -origin {-100 -550} -name Vin_a1
+icon_term -type input -origin {-100 -530} -name Vin_b2
+icon_term -type input -origin {-100 -510} -name Vin_b3
+icon_term -type input -origin {-100 -490} -name Vin_a3
+icon_term -type input -origin {-100 -470} -name Vin_a2
+icon_term -type input -origin {-100 -450} -name Vin_b4
+icon_term -type input -origin {-100 -430} -name Vin_a4
+icon_term -type input -origin {-100 -410} -name Vin_b5
+icon_term -type input -origin {-100 -390} -name Vin_a5
+icon_term -type input -origin {-100 -370} -name Vin_b6
+icon_term -type input -origin {-100 -350} -name Vin_b7
+icon_term -type input -origin {-100 -330} -name Vin_a7
+icon_term -type input -origin {-100 -310} -name Vin_a6
+icon_term -type input -origin {-100 -290} -name Vin_b8
+icon_term -type input -origin {-100 -270} -name Vin_a8
+icon_term -type input -origin {-100 -250} -name Vin_b9
+icon_term -type input -origin {-100 -230} -name Vin_a9
+icon_term -type input -origin {-100 -210} -name Vin_b10
+icon_term -type input -origin {-100 -190} -name Vin_b11
+icon_term -type input -origin {-100 -170} -name Vin_a11
+icon_term -type input -origin {-100 -150} -name Vin_a10
+icon_term -type input -origin {-100 -130} -name Vin_b12
+icon_term -type input -origin {-100 -110} -name Vin_a12
+icon_term -type input -origin {-100 -90} -name Vin_b13
+icon_term -type input -origin {-100 -70} -name Vin_a13
+icon_term -type input -origin {-100 -50} -name Vin_b14
+icon_term -type input -origin {-100 -30} -name Vin_b15
+icon_term -type input -origin {-100 -10} -name Vin_a15
+icon_term -type input -origin {-100 10} -name Vin_a14
+icon_term -type input -origin {-100 30} -name Vin_b16
+icon_term -type input -origin {-100 50} -name Vin_a16
+icon_term -type input -origin {-100 70} -name Vin_b17
+icon_term -type input -origin {-100 90} -name Vin_a17
+icon_term -type input -origin {-100 110} -name Vin_b18
+icon_term -type input -origin {-100 130} -name Vin_b19
+icon_term -type input -origin {-100 150} -name Vin_a19
+icon_term -type input -origin {-100 170} -name Vin_a18
+icon_term -type input -origin {-100 190} -name Vin_b20
+icon_term -type input -origin {-100 210} -name Vin_a20
+icon_term -type input -origin {-100 230} -name Vin_b21
+icon_term -type input -origin {-100 250} -name Vin_a21
+icon_term -type input -origin {-100 270} -name Vin_b22
+icon_term -type input -origin {-100 290} -name Vin_b23
+icon_term -type input -origin {-100 310} -name Vin_a23
+icon_term -type input -origin {-100 330} -name Vin_a22
+icon_term -type input -origin {-100 350} -name Vin_b24
+icon_term -type input -origin {-100 370} -name Vin_a24
+icon_term -type input -origin {-100 390} -name Vin_b25
+icon_term -type input -origin {-100 410} -name Vin_b26
+icon_term -type input -origin {-100 430} -name Vin_a25
+icon_term -type input -origin {-100 450} -name Vin_b27
+icon_term -type input -origin {-100 470} -name Vin_a27
+icon_term -type input -origin {-100 490} -name Vin_a26
+icon_term -type input -origin {-100 510} -name Vin_b28
+icon_term -type input -origin {-100 530} -name Vin_a28
+icon_term -type input -origin {-100 550} -name Vin_b29
+icon_term -type input -origin {-100 570} -name Vin_a29
+icon_term -type input -origin {-100 590} -name Vin_b30
+icon_term -type input -origin {-100 610} -name Vin_b31
+icon_term -type input -origin {-100 630} -name Vin_a31
+icon_term -type input -origin {-100 650} -name Vin_a30
+icon_term -type output -origin {100 -630} -name Sum_0
+icon_term -type output -origin {100 -610} -name Carry_0
+icon_term -type output -origin {100 -590} -name Sum_1
+icon_term -type output -origin {100 -570} -name Carry_1
+icon_term -type output -origin {100 -550} -name Sum_2
+icon_term -type output -origin {100 -530} -name Sum_3
+icon_term -type output -origin {100 -510} -name Carry_2
+icon_term -type output -origin {100 -490} -name Sum_4
+icon_term -type output -origin {100 -470} -name Carry_4
+icon_term -type output -origin {100 -450} -name Sum_5
+icon_term -type output -origin {100 -430} -name Carry_5
+icon_term -type output -origin {100 -410} -name Sum_6
+icon_term -type output -origin {100 -390} -name Carry_6
+icon_term -type output -origin {100 -370} -name Sum_7
+icon_term -type output -origin {100 -350} -name Sum_8
+icon_term -type output -origin {100 -330} -name Carry_8
+icon_term -type output -origin {100 -310} -name Sum_9
+icon_term -type output -origin {100 -290} -name Carry_9
+icon_term -type output -origin {100 -270} -name Sum_10
+icon_term -type output -origin {100 -250} -name Carry_10
+icon_term -type output -origin {100 -230} -name Sum_11
+icon_term -type output -origin {100 -210} -name Sum_12
+icon_term -type output -origin {100 -190} -name Carrry_12
+icon_term -type output -origin {100 -170} -name Sum_13
+icon_term -type output -origin {100 -150} -name Carry_13
+icon_term -type output -origin {100 -130} -name Sum_14
+icon_term -type output -origin {100 -110} -name Carry_14
+icon_term -type output -origin {100 -90} -name Sum_15
+icon_term -type output -origin {100 -70} -name Sum_16
+icon_term -type output -origin {100 -50} -name Carry_16
+icon_term -type output -origin {100 -30} -name Sum_17
+icon_term -type output -origin {100 -10} -name Carry_17
+icon_term -type output -origin {100 10} -name Sum_18
+icon_term -type output -origin {100 30} -name Sum_19
+icon_term -type output -origin {100 50} -name Carry_18
+icon_term -type output -origin {100 70} -name Sum_20
+icon_term -type output -origin {100 90} -name Carry_20
+icon_term -type output -origin {100 110} -name Sum_21
+icon_term -type output -origin {100 130} -name Carry_21
+icon_term -type output -origin {100 150} -name Sum_22
+icon_term -type output -origin {100 170} -name Carry_22
+icon_term -type output -origin {100 190} -name Sum_23
+icon_term -type output -origin {100 210} -name Sum_24
+icon_term -type output -origin {100 230} -name Carry_24
+icon_term -type output -origin {100 250} -name Sum_25
+icon_term -type output -origin {100 270} -name Carry_25
+icon_term -type output -origin {100 290} -name Sum_26
+icon_term -type output -origin {100 310} -name Carry_26
+icon_term -type output -origin {100 330} -name Sum_27
+icon_term -type output -origin {100 350} -name Sum_28
+icon_term -type output -origin {100 370} -name Carry_28
+icon_term -type output -origin {100 390} -name Sum_29
+icon_term -type output -origin {100 410} -name Carry_29
+icon_term -type output -origin {100 430} -name Sum_30
+icon_term -type output -origin {100 450} -name Sum_31
+icon_term -type output -origin {100 470} -name Carry_30
+icon_term -type output -origin {100 490} -name Carry_31
+icon_property -origin {-90 -630} -label Cin
+icon_property -origin {-90 -610} -label Vin_b
+icon_property -origin {-90 -590} -label Vin_a
+icon_property -origin {-90 -570} -label Vin_b1
+icon_property -origin {-90 -550} -label Vin_a1
+icon_property -origin {-90 -530} -label Vin_b2
+icon_property -origin {-90 -510} -label Vin_b3
+icon_property -origin {-90 -490} -label Vin_a3
+icon_property -origin {-90 -470} -label Vin_a2
+icon_property -origin {-90 -450} -label Vin_b4
+icon_property -origin {-90 -430} -label Vin_a4
+icon_property -origin {-90 -410} -label Vin_b5
+icon_property -origin {-90 -390} -label Vin_a5
+icon_property -origin {-90 -370} -label Vin_b6
+icon_property -origin {-90 -350} -label Vin_b7
+icon_property -origin {-90 -330} -label Vin_a7
+icon_property -origin {-90 -310} -label Vin_a6
+icon_property -origin {-90 -290} -label Vin_b8
+icon_property -origin {-90 -270} -label Vin_a8
+icon_property -origin {-90 -250} -label Vin_b9
+icon_property -origin {-90 -230} -label Vin_a9
+icon_property -origin {-90 -210} -label Vin_b10
+icon_property -origin {-90 -190} -label Vin_b11
+icon_property -origin {-90 -170} -label Vin_a11
+icon_property -origin {-90 -150} -label Vin_a10
+icon_property -origin {-90 -130} -label Vin_b12
+icon_property -origin {-90 -110} -label Vin_a12
+icon_property -origin {-90 -90} -label Vin_b13
+icon_property -origin {-90 -70} -label Vin_a13
+icon_property -origin {-90 -50} -label Vin_b14
+icon_property -origin {-90 -30} -label Vin_b15
+icon_property -origin {-90 -10} -label Vin_a15
+icon_property -origin {-90 10} -label Vin_a14
+icon_property -origin {-90 30} -label Vin_b16
+icon_property -origin {-90 50} -label Vin_a16
+icon_property -origin {-90 70} -label Vin_b17
+icon_property -origin {-90 90} -label Vin_a17
+icon_property -origin {-90 110} -label Vin_b18
+icon_property -origin {-90 130} -label Vin_b19
+icon_property -origin {-90 150} -label Vin_a19
+icon_property -origin {-90 170} -label Vin_a18
+icon_property -origin {-90 190} -label Vin_b20
+icon_property -origin {-90 210} -label Vin_a20
+icon_property -origin {-90 230} -label Vin_b21
+icon_property -origin {-90 250} -label Vin_a21
+icon_property -origin {-90 270} -label Vin_b22
+icon_property -origin {-90 290} -label Vin_b23
+icon_property -origin {-90 310} -label Vin_a23
+icon_property -origin {-90 330} -label Vin_a22
+icon_property -origin {-90 350} -label Vin_b24
+icon_property -origin {-90 370} -label Vin_a24
+icon_property -origin {-90 390} -label Vin_b25
+icon_property -origin {-90 410} -label Vin_b26
+icon_property -origin {-90 430} -label Vin_a25
+icon_property -origin {-90 450} -label Vin_b27
+icon_property -origin {-90 470} -label Vin_a27
+icon_property -origin {-90 490} -label Vin_a26
+icon_property -origin {-90 510} -label Vin_b28
+icon_property -origin {-90 530} -label Vin_a28
+icon_property -origin {-90 550} -label Vin_b29
+icon_property -origin {-90 570} -label Vin_a29
+icon_property -origin {-90 590} -label Vin_b30
+icon_property -origin {-90 610} -label Vin_b31
+icon_property -origin {-90 630} -label Vin_a31
+icon_property -origin {-90 650} -label Vin_a30
+icon_property -origin {90 -630} -anchor e -label Sum_0
+icon_property -origin {90 -610} -anchor e -label Carry_0
+icon_property -origin {90 -590} -anchor e -label Sum_1
+icon_property -origin {90 -570} -anchor e -label Carry_1
+icon_property -origin {90 -550} -anchor e -label Sum_2
+icon_property -origin {90 -530} -anchor e -label Sum_3
+icon_property -origin {90 -510} -anchor e -label Carry_2
+icon_property -origin {90 -490} -anchor e -label Sum_4
+icon_property -origin {90 -470} -anchor e -label Carry_4
+icon_property -origin {90 -450} -anchor e -label Sum_5
+icon_property -origin {90 -430} -anchor e -label Carry_5
+icon_property -origin {90 -410} -anchor e -label Sum_6
+icon_property -origin {90 -390} -anchor e -label Carry_6
+icon_property -origin {90 -370} -anchor e -label Sum_7
+icon_property -origin {90 -350} -anchor e -label Sum_8
+icon_property -origin {90 -330} -anchor e -label Carry_8
+icon_property -origin {90 -310} -anchor e -label Sum_9
+icon_property -origin {90 -290} -anchor e -label Carry_9
+icon_property -origin {90 -270} -anchor e -label Sum_10
+icon_property -origin {90 -250} -anchor e -label Carry_10
+icon_property -origin {90 -230} -anchor e -label Sum_11
+icon_property -origin {90 -210} -anchor e -label Sum_12
+icon_property -origin {90 -190} -anchor e -label Carrry_12
+icon_property -origin {90 -170} -anchor e -label Sum_13
+icon_property -origin {90 -150} -anchor e -label Carry_13
+icon_property -origin {90 -130} -anchor e -label Sum_14
+icon_property -origin {90 -110} -anchor e -label Carry_14
+icon_property -origin {90 -90} -anchor e -label Sum_15
+icon_property -origin {90 -70} -anchor e -label Sum_16
+icon_property -origin {90 -50} -anchor e -label Carry_16
+icon_property -origin {90 -30} -anchor e -label Sum_17
+icon_property -origin {90 -10} -anchor e -label Carry_17
+icon_property -origin {90 10} -anchor e -label Sum_18
+icon_property -origin {90 30} -anchor e -label Sum_19
+icon_property -origin {90 50} -anchor e -label Carry_18
+icon_property -origin {90 70} -anchor e -label Sum_20
+icon_property -origin {90 90} -anchor e -label Carry_20
+icon_property -origin {90 110} -anchor e -label Sum_21
+icon_property -origin {90 130} -anchor e -label Carry_21
+icon_property -origin {90 150} -anchor e -label Sum_22
+icon_property -origin {90 170} -anchor e -label Carry_22
+icon_property -origin {90 190} -anchor e -label Sum_23
+icon_property -origin {90 210} -anchor e -label Sum_24
+icon_property -origin {90 230} -anchor e -label Carry_24
+icon_property -origin {90 250} -anchor e -label Sum_25
+icon_property -origin {90 270} -anchor e -label Carry_25
+icon_property -origin {90 290} -anchor e -label Sum_26
+icon_property -origin {90 310} -anchor e -label Carry_26
+icon_property -origin {90 330} -anchor e -label Sum_27
+icon_property -origin {90 350} -anchor e -label Sum_28
+icon_property -origin {90 370} -anchor e -label Carry_28
+icon_property -origin {90 390} -anchor e -label Sum_29
+icon_property -origin {90 410} -anchor e -label Carry_29
+icon_property -origin {90 430} -anchor e -label Sum_30
+icon_property -origin {90 450} -anchor e -label Sum_31
+icon_property -origin {90 470} -anchor e -label Carry_30
+icon_property -origin {90 490} -anchor e -label Carry_31
+icon_property -origin {-90 -680} -label {$name}
+icon_property -origin {-90 -660} -label 32bitSubtractor1
+  icon_line -100 -670 100 -670 100 670 -100 670 -100 -670
+  icon_property -origin {-100 690} -type user -name name -default x
+}
+

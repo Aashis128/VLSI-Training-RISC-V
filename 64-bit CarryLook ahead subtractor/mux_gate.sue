@@ -1,0 +1,430 @@
+proc SCHEMATIC_mux_gate {} {
+make proj_mux_2to1_1x -name xi0 -origin {500 110}
+make proj_mux_2to1_1x -name xi1 -origin {500 240}
+make proj_mux_2to1_1x -name xi2 -origin {500 370}
+make proj_mux_2to1_1x -name xi3 -origin {500 510}
+make proj_mux_2to1_1x -name xi4 -origin {500 640}
+make proj_mux_2to1_1x -name xi5 -origin {500 780}
+make proj_mux_2to1_1x -name xi6 -origin {500 920}
+make proj_mux_2to1_1x -name xi7 -origin {500 1060}
+make proj_mux_2to1_1x -name xi8 -origin {500 1180}
+make proj_mux_2to1_1x -name xi9 -origin {500 1310}
+make proj_mux_2to1_1x -name xi10 -origin {500 1440}
+make proj_mux_2to1_1x -name xi11 -origin {500 1570}
+make proj_mux_2to1_1x -name xi12 -origin {500 1700}
+make proj_mux_2to1_1x -name xi13 -origin {500 1830}
+make proj_mux_2to1_1x -name xi14 -origin {500 1950}
+make proj_mux_2to1_1x -name xi15 -origin {500 2070}
+make proj_mux_2to1_1x -name xi16 -origin {500 2190}
+make proj_mux_2to1_1x -name xi17 -origin {500 2320}
+make proj_mux_2to1_1x -name xi18 -origin {500 2450}
+make proj_mux_2to1_1x -name xi19 -origin {500 2570}
+make proj_mux_2to1_1x -name xi20 -origin {500 2690}
+make proj_mux_2to1_1x -name xi21 -origin {500 2820}
+make proj_mux_2to1_1x -name xi22 -origin {500 2940}
+make proj_mux_2to1_1x -name xi23 -origin {500 3060}
+make proj_mux_2to1_1x -name xi24 -origin {500 3190}
+make proj_mux_2to1_1x -name xi25 -origin {500 3320}
+make proj_mux_2to1_1x -name xi26 -origin {500 3440}
+make proj_mux_2to1_1x -name xi27 -origin {500 3570}
+make proj_mux_2to1_1x -name xi28 -origin {500 3690}
+make proj_mux_2to1_1x -name xi29 -origin {500 3820}
+make proj_mux_2to1_1x -name xi30 -origin {500 3950}
+make proj_mux_2to1_1x -name xi31 -origin {500 4080}
+make input -name Carry_31 -origin {640 4190}
+make input -name S0 -origin {400 100}
+make input -name Sum_0 -origin {400 120}
+make input -name S1 -origin {400 230}
+make input -name Sum_1 -origin {400 250}
+make input -name S2 -origin {400 360}
+make input -name Sum_2 -origin {400 380}
+make input -name S3 -origin {400 500}
+make input -name Sum_3 -origin {400 520}
+make input -name S4 -origin {400 630}
+make input -name Sum_4 -origin {400 650}
+make input -name S5 -origin {400 770}
+make input -name Sum_5 -origin {400 790}
+make input -name S6 -origin {400 910}
+make input -name Sum_6 -origin {400 930}
+make input -name S7 -origin {400 1050}
+make input -name Sum_7 -origin {400 1070}
+make input -name S8 -origin {400 1170}
+make input -name Sum_8 -origin {400 1190}
+make input -name S9 -origin {400 1300}
+make input -name Sum_9 -origin {400 1320}
+make input -name S10 -origin {400 1430}
+make input -name Sum_10 -origin {400 1450}
+make input -name S11 -origin {400 1560}
+make input -name Sum_11 -origin {400 1580}
+make input -name S12 -origin {400 1690}
+make input -name Sum_12 -origin {400 1710}
+make input -name S13 -origin {400 1820}
+make input -name Sum_13 -origin {400 1840}
+make input -name S14 -origin {400 1940}
+make input -name Sum_14 -origin {400 1960}
+make input -name S15 -origin {400 2060}
+make input -name Sum_15 -origin {400 2080}
+make input -name S16 -origin {400 2180}
+make input -name Sum_16 -origin {400 2200}
+make input -name S17 -origin {400 2310}
+make input -name Sum_17 -origin {400 2330}
+make input -name S18 -origin {400 2440}
+make input -name Sum_18 -origin {400 2460}
+make input -name S19 -origin {400 2560}
+make input -name Sum_19 -origin {400 2580}
+make input -name S20 -origin {400 2680}
+make input -name S21 -origin {400 2810}
+make input -name Sum_20 -origin {400 2700}
+make input -name Sum_21 -origin {400 2830}
+make input -name S22 -origin {400 2930}
+make input -name Sum_22 -origin {400 2950}
+make input -name S23 -origin {400 3050}
+make input -name Sum_23 -origin {400 3070}
+make input -name S24 -origin {400 3180}
+make input -name Sum_24 -origin {400 3200}
+make input -name S25 -origin {400 3310}
+make input -name Sum_25 -origin {400 3330}
+make input -name S26 -origin {400 3430}
+make input -name Sum_26 -origin {400 3450}
+make input -name S27 -origin {400 3560}
+make input -name Sum_27 -origin {400 3580}
+make input -name S28 -origin {400 3680}
+make input -name Sum_28 -origin {400 3700}
+make input -name S29 -origin {400 3810}
+make input -name Sum-29 -origin {400 3830}
+make input -name S30 -origin {400 3940}
+make input -name Sum_30 -origin {400 3960}
+make input -name S31 -origin {400 4070}
+make input -name Sum_31 -origin {400 4090}
+make output -name F.S0 -origin {600 110}
+make output -name F.S1 -origin {600 240}
+make output -name F.S2 -origin {600 370}
+make output -name F.S3 -origin {600 510}
+make output -name F.S4 -origin {600 640}
+make output -name F.S5 -origin {600 780}
+make output -name F.S6 -origin {600 920}
+make output -name F.S7 -origin {600 1060}
+make output -name F.S8 -origin {600 1180}
+make output -name F.S9 -origin {600 1310}
+make output -name F.S10 -origin {600 1440}
+make output -name F.S11 -origin {600 1570}
+make output -name F.S12 -origin {600 1700}
+make output -name F.S13 -origin {600 1830}
+make output -name F.S14 -origin {600 1950}
+make output -name F.S15 -origin {600 2070}
+make output -name F.S16 -origin {600 2190}
+make output -name F.S17 -origin {600 2320}
+make output -name F.S18 -origin {600 2450}
+make output -name F.S19 -origin {600 2570}
+make output -name F.S20 -origin {600 2690}
+make output -name F.S21 -origin {600 2820}
+make output -name F.S22 -origin {600 2940}
+make output -name F.S23 -origin {600 3060}
+make output -name F.S24 -origin {600 3190}
+make output -name F.S25 -origin {600 3320}
+make output -name F.S26 -origin {600 3440}
+make output -name F.S27 -origin {600 3570}
+make output -name F.S28 -origin {600 3690}
+make output -name F.S29 -origin {600 3820}
+make output -name F.S30 -origin {600 3950}
+make output -name F.S31 -origin {600 4080}
+  make_wire 530 10 640 10
+  make_wire 530 10 530 60
+  make_wire 530 170 530 190
+  make_wire 640 170 530 170
+  make_wire 640 10 640 170
+  make_wire 530 310 640 310
+  make_wire 530 310 530 320
+  make_wire 640 170 640 310
+  make_wire 530 440 640 440
+  make_wire 530 440 530 460
+  make_wire 640 310 640 440
+  make_wire 530 570 640 570
+  make_wire 530 570 530 590
+  make_wire 640 570 640 440
+  make_wire 530 710 640 710
+  make_wire 530 710 530 730
+  make_wire 640 570 640 710
+  make_wire 530 850 640 850
+  make_wire 530 850 530 870
+  make_wire 640 850 640 710
+  make_wire 530 990 640 990
+  make_wire 530 990 530 1010
+  make_wire 640 990 640 850
+  make_wire 530 1120 640 1120
+  make_wire 530 1120 530 1130
+  make_wire 640 990 640 1120
+  make_wire 530 1240 640 1240
+  make_wire 530 1240 530 1260
+  make_wire 640 1240 640 1120
+  make_wire 530 1370 640 1370
+  make_wire 530 1370 530 1390
+  make_wire 640 1370 640 1240
+  make_wire 530 1500 640 1500
+  make_wire 530 1500 530 1520
+  make_wire 640 1500 640 1370
+  make_wire 530 1640 640 1640
+  make_wire 530 1640 530 1650
+  make_wire 640 1500 640 1640
+  make_wire 530 1770 640 1770
+  make_wire 530 1770 530 1780
+  make_wire 640 1770 640 1640
+  make_wire 530 1890 640 1890
+  make_wire 530 1890 530 1900
+  make_wire 640 1770 640 1890
+  make_wire 530 2010 640 2010
+  make_wire 530 2010 530 2020
+  make_wire 640 2010 640 1890
+  make_wire 530 2130 640 2130
+  make_wire 530 2130 530 2140
+  make_wire 640 2130 640 2010
+  make_wire 530 2260 640 2260
+  make_wire 530 2260 530 2270
+  make_wire 640 2260 640 2130
+  make_wire 530 2390 640 2390
+  make_wire 530 2390 530 2400
+  make_wire 640 2260 640 2390
+  make_wire 530 2510 640 2510
+  make_wire 530 2510 530 2520
+  make_wire 640 2510 640 2390
+  make_wire 530 2630 640 2630
+  make_wire 530 2630 530 2640
+  make_wire 640 2630 640 2510
+  make_wire 530 2750 640 2750
+  make_wire 530 2750 530 2770
+  make_wire 640 2630 640 2750
+  make_wire 530 2880 640 2880
+  make_wire 530 2880 530 2890
+  make_wire 640 2880 640 2750
+  make_wire 530 3000 640 3000
+  make_wire 530 3000 530 3010
+  make_wire 640 3000 640 2880
+  make_wire 530 3120 640 3120
+  make_wire 530 3120 530 3140
+  make_wire 640 3000 640 3120
+  make_wire 530 3260 640 3260
+  make_wire 530 3260 530 3270
+  make_wire 640 3120 640 3260
+  make_wire 530 3380 640 3380
+  make_wire 530 3380 530 3390
+  make_wire 640 3380 640 3260
+  make_wire 530 3500 640 3500
+  make_wire 530 3500 530 3520
+  make_wire 640 3500 640 3380
+  make_wire 530 3630 640 3630
+  make_wire 530 3630 530 3640
+  make_wire 640 3630 640 3500
+  make_wire 530 3760 640 3760
+  make_wire 530 3760 530 3770
+  make_wire 640 3630 640 3760
+  make_wire 530 3890 640 3890
+  make_wire 530 3890 530 3900
+  make_wire 640 3890 640 3760
+  make_wire 530 4020 640 4020
+  make_wire 530 4020 530 4030
+  make_wire 640 3890 640 4020
+  make_wire 640 4020 640 4190
+}
+
+proc ICON_mux_gate args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -630} -name Carry_31
+icon_term -type input -origin {-100 -610} -name S0
+icon_term -type input -origin {-100 -590} -name Sum_0
+icon_term -type input -origin {-100 -570} -name S1
+icon_term -type input -origin {-100 -550} -name Sum_1
+icon_term -type input -origin {-100 -530} -name S2
+icon_term -type input -origin {-100 -510} -name Sum_2
+icon_term -type input -origin {-100 -490} -name S3
+icon_term -type input -origin {-100 -470} -name Sum_3
+icon_term -type input -origin {-100 -450} -name S4
+icon_term -type input -origin {-100 -430} -name Sum_4
+icon_term -type input -origin {-100 -410} -name S5
+icon_term -type input -origin {-100 -390} -name Sum_5
+icon_term -type input -origin {-100 -370} -name S6
+icon_term -type input -origin {-100 -350} -name Sum_6
+icon_term -type input -origin {-100 -330} -name S7
+icon_term -type input -origin {-100 -310} -name Sum_7
+icon_term -type input -origin {-100 -290} -name S8
+icon_term -type input -origin {-100 -270} -name Sum_8
+icon_term -type input -origin {-100 -250} -name S9
+icon_term -type input -origin {-100 -230} -name Sum_9
+icon_term -type input -origin {-100 -210} -name S10
+icon_term -type input -origin {-100 -190} -name Sum_10
+icon_term -type input -origin {-100 -170} -name S11
+icon_term -type input -origin {-100 -150} -name Sum_11
+icon_term -type input -origin {-100 -130} -name S12
+icon_term -type input -origin {-100 -110} -name Sum_12
+icon_term -type input -origin {-100 -90} -name S13
+icon_term -type input -origin {-100 -70} -name Sum_13
+icon_term -type input -origin {-100 -50} -name S14
+icon_term -type input -origin {-100 -30} -name Sum_14
+icon_term -type input -origin {-100 -10} -name S15
+icon_term -type input -origin {-100 10} -name Sum_15
+icon_term -type input -origin {-100 30} -name S16
+icon_term -type input -origin {-100 50} -name Sum_16
+icon_term -type input -origin {-100 70} -name S17
+icon_term -type input -origin {-100 90} -name Sum_17
+icon_term -type input -origin {-100 110} -name S18
+icon_term -type input -origin {-100 130} -name Sum_18
+icon_term -type input -origin {-100 150} -name S19
+icon_term -type input -origin {-100 170} -name Sum_19
+icon_term -type input -origin {-100 190} -name S20
+icon_term -type input -origin {-100 210} -name S21
+icon_term -type input -origin {-100 230} -name Sum_20
+icon_term -type input -origin {-100 250} -name Sum_21
+icon_term -type input -origin {-100 270} -name S22
+icon_term -type input -origin {-100 290} -name Sum_22
+icon_term -type input -origin {-100 310} -name S23
+icon_term -type input -origin {-100 330} -name Sum_23
+icon_term -type input -origin {-100 350} -name S24
+icon_term -type input -origin {-100 370} -name Sum_24
+icon_term -type input -origin {-100 390} -name S25
+icon_term -type input -origin {-100 410} -name Sum_25
+icon_term -type input -origin {-100 430} -name S26
+icon_term -type input -origin {-100 450} -name Sum_26
+icon_term -type input -origin {-100 470} -name S27
+icon_term -type input -origin {-100 490} -name Sum_27
+icon_term -type input -origin {-100 510} -name S28
+icon_term -type input -origin {-100 530} -name Sum_28
+icon_term -type input -origin {-100 550} -name S29
+icon_term -type input -origin {-100 570} -name Sum-29
+icon_term -type input -origin {-100 590} -name S30
+icon_term -type input -origin {-100 610} -name Sum_30
+icon_term -type input -origin {-100 630} -name S31
+icon_term -type input -origin {-100 650} -name Sum_31
+icon_term -type output -origin {100 -630} -name F.S0
+icon_term -type output -origin {100 -610} -name F.S1
+icon_term -type output -origin {100 -590} -name F.S2
+icon_term -type output -origin {100 -570} -name F.S3
+icon_term -type output -origin {100 -550} -name F.S4
+icon_term -type output -origin {100 -530} -name F.S5
+icon_term -type output -origin {100 -510} -name F.S6
+icon_term -type output -origin {100 -490} -name F.S7
+icon_term -type output -origin {100 -470} -name F.S8
+icon_term -type output -origin {100 -450} -name F.S9
+icon_term -type output -origin {100 -430} -name F.S10
+icon_term -type output -origin {100 -410} -name F.S11
+icon_term -type output -origin {100 -390} -name F.S12
+icon_term -type output -origin {100 -370} -name F.S13
+icon_term -type output -origin {100 -350} -name F.S14
+icon_term -type output -origin {100 -330} -name F.S15
+icon_term -type output -origin {100 -310} -name F.S16
+icon_term -type output -origin {100 -290} -name F.S17
+icon_term -type output -origin {100 -270} -name F.S18
+icon_term -type output -origin {100 -250} -name F.S19
+icon_term -type output -origin {100 -230} -name F.S20
+icon_term -type output -origin {100 -210} -name F.S21
+icon_term -type output -origin {100 -190} -name F.S22
+icon_term -type output -origin {100 -170} -name F.S23
+icon_term -type output -origin {100 -150} -name F.S24
+icon_term -type output -origin {100 -130} -name F.S25
+icon_term -type output -origin {100 -110} -name F.S26
+icon_term -type output -origin {100 -90} -name F.S27
+icon_term -type output -origin {100 -70} -name F.S28
+icon_term -type output -origin {100 -50} -name F.S29
+icon_term -type output -origin {100 -30} -name F.S30
+icon_term -type output -origin {100 -10} -name F.S31
+icon_property -origin {-90 -630} -label Carry_31
+icon_property -origin {-90 -610} -label S0
+icon_property -origin {-90 -590} -label Sum_0
+icon_property -origin {-90 -570} -label S1
+icon_property -origin {-90 -550} -label Sum_1
+icon_property -origin {-90 -530} -label S2
+icon_property -origin {-90 -510} -label Sum_2
+icon_property -origin {-90 -490} -label S3
+icon_property -origin {-90 -470} -label Sum_3
+icon_property -origin {-90 -450} -label S4
+icon_property -origin {-90 -430} -label Sum_4
+icon_property -origin {-90 -410} -label S5
+icon_property -origin {-90 -390} -label Sum_5
+icon_property -origin {-90 -370} -label S6
+icon_property -origin {-90 -350} -label Sum_6
+icon_property -origin {-90 -330} -label S7
+icon_property -origin {-90 -310} -label Sum_7
+icon_property -origin {-90 -290} -label S8
+icon_property -origin {-90 -270} -label Sum_8
+icon_property -origin {-90 -250} -label S9
+icon_property -origin {-90 -230} -label Sum_9
+icon_property -origin {-90 -210} -label S10
+icon_property -origin {-90 -190} -label Sum_10
+icon_property -origin {-90 -170} -label S11
+icon_property -origin {-90 -150} -label Sum_11
+icon_property -origin {-90 -130} -label S12
+icon_property -origin {-90 -110} -label Sum_12
+icon_property -origin {-90 -90} -label S13
+icon_property -origin {-90 -70} -label Sum_13
+icon_property -origin {-90 -50} -label S14
+icon_property -origin {-90 -30} -label Sum_14
+icon_property -origin {-90 -10} -label S15
+icon_property -origin {-90 10} -label Sum_15
+icon_property -origin {-90 30} -label S16
+icon_property -origin {-90 50} -label Sum_16
+icon_property -origin {-90 70} -label S17
+icon_property -origin {-90 90} -label Sum_17
+icon_property -origin {-90 110} -label S18
+icon_property -origin {-90 130} -label Sum_18
+icon_property -origin {-90 150} -label S19
+icon_property -origin {-90 170} -label Sum_19
+icon_property -origin {-90 190} -label S20
+icon_property -origin {-90 210} -label S21
+icon_property -origin {-90 230} -label Sum_20
+icon_property -origin {-90 250} -label Sum_21
+icon_property -origin {-90 270} -label S22
+icon_property -origin {-90 290} -label Sum_22
+icon_property -origin {-90 310} -label S23
+icon_property -origin {-90 330} -label Sum_23
+icon_property -origin {-90 350} -label S24
+icon_property -origin {-90 370} -label Sum_24
+icon_property -origin {-90 390} -label S25
+icon_property -origin {-90 410} -label Sum_25
+icon_property -origin {-90 430} -label S26
+icon_property -origin {-90 450} -label Sum_26
+icon_property -origin {-90 470} -label S27
+icon_property -origin {-90 490} -label Sum_27
+icon_property -origin {-90 510} -label S28
+icon_property -origin {-90 530} -label Sum_28
+icon_property -origin {-90 550} -label S29
+icon_property -origin {-90 570} -label Sum-29
+icon_property -origin {-90 590} -label S30
+icon_property -origin {-90 610} -label Sum_30
+icon_property -origin {-90 630} -label S31
+icon_property -origin {-90 650} -label Sum_31
+icon_property -origin {90 -630} -anchor e -label F.S0
+icon_property -origin {90 -610} -anchor e -label F.S1
+icon_property -origin {90 -590} -anchor e -label F.S2
+icon_property -origin {90 -570} -anchor e -label F.S3
+icon_property -origin {90 -550} -anchor e -label F.S4
+icon_property -origin {90 -530} -anchor e -label F.S5
+icon_property -origin {90 -510} -anchor e -label F.S6
+icon_property -origin {90 -490} -anchor e -label F.S7
+icon_property -origin {90 -470} -anchor e -label F.S8
+icon_property -origin {90 -450} -anchor e -label F.S9
+icon_property -origin {90 -430} -anchor e -label F.S10
+icon_property -origin {90 -410} -anchor e -label F.S11
+icon_property -origin {90 -390} -anchor e -label F.S12
+icon_property -origin {90 -370} -anchor e -label F.S13
+icon_property -origin {90 -350} -anchor e -label F.S14
+icon_property -origin {90 -330} -anchor e -label F.S15
+icon_property -origin {90 -310} -anchor e -label F.S16
+icon_property -origin {90 -290} -anchor e -label F.S17
+icon_property -origin {90 -270} -anchor e -label F.S18
+icon_property -origin {90 -250} -anchor e -label F.S19
+icon_property -origin {90 -230} -anchor e -label F.S20
+icon_property -origin {90 -210} -anchor e -label F.S21
+icon_property -origin {90 -190} -anchor e -label F.S22
+icon_property -origin {90 -170} -anchor e -label F.S23
+icon_property -origin {90 -150} -anchor e -label F.S24
+icon_property -origin {90 -130} -anchor e -label F.S25
+icon_property -origin {90 -110} -anchor e -label F.S26
+icon_property -origin {90 -90} -anchor e -label F.S27
+icon_property -origin {90 -70} -anchor e -label F.S28
+icon_property -origin {90 -50} -anchor e -label F.S29
+icon_property -origin {90 -30} -anchor e -label F.S30
+icon_property -origin {90 -10} -anchor e -label F.S31
+icon_property -origin {-90 -680} -label {$name}
+icon_property -origin {-90 -660} -label mux_gate
+  icon_line -100 -670 100 -670 100 670 -100 670 -100 -670
+  icon_property -origin {-100 690} -type user -name name -default x
+}
+

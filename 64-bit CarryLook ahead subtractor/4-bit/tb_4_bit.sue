@@ -1,0 +1,34 @@
+proc SCHEMATIC_tb_4_bit {} {
+make 4_bit_cla -name xi0 -origin {70 20}
+make name_net -name c0 -origin {310 -40}
+make name_net -name c1 -origin {350 -20}
+make name_net -name c2 -origin {400 0}
+make name_net -name c3 -origin {440 20}
+make global -name gnd -origin {-190 270}
+make global -name gnd -origin {-330 270}
+make pulse -name V0 -pulse_voltage 1.3V -origin {-190 230}
+make pulse -name V1 -pulse_voltage 1.3V -pulse_width 6ns -period 12ns -origin {-330 230}
+make name_net -name a -origin {-190 190}
+make name_net -name b -origin {-330 190}
+make name_net -name b -origin {-120 -40}
+make name_net -name a -origin {-150 -20}
+make name_net -name a -origin {-130 0}
+make name_net -name b -origin {-160 40}
+make name_net -name a -origin {-210 60}
+make name_net -name b -origin {-140 20}
+make name_net -name a -origin {-200 100}
+make name_net -name b -origin {-170 80}
+  make_wire 170 -40 310 -40
+  make_wire 170 -20 350 -20
+  make_wire 170 0 400 0
+  make_wire 170 20 440 20
+  make_wire -30 0 -130 0
+  make_wire -30 -40 -120 -40
+  make_wire -200 100 -30 100
+  make_wire -30 60 -210 60
+  make_wire -30 -20 -150 -20
+  make_wire -30 20 -140 20
+  make_wire -30 40 -160 40
+  make_wire -30 80 -170 80
+}
+
